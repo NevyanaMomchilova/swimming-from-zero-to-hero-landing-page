@@ -1,0 +1,652 @@
+/* font-family: 'Montserrat', sans-serif; */
+
+/* ===========================================
+Table of Content:
+    1.GLOBAL
+        1.1.Variables
+        1.2.Button
+        1.3.Social Links
+    2.HERO SECTION
+        2.1.Hero-Navigation
+        2.2.Hero-Information
+        2.3.Hero-Images
+    3.BENEFITS SECTION
+    4.COURSES SECTION
+    5.ABOUT SECTION
+    6.INSTRUCTORS SECTION
+    7.OUR GALLERY SECTION
+    8.CTA DOWNLOAD APP SECTION
+    9.REGISTER SECTION
+    10.FOOTER
+*/
+
+
+/* ===========================================
+1.GLOBAL 
+*/
+/* 1.1.Variables */
+:root {
+    /* Colors */
+    --white: #ffffff;
+    --black: #000000;
+    --grey: #444444;
+    --blue: #00dde4;
+    --pink: #e54fed;
+    --purple: #432e8b;
+}
+
+/* 1.2.Button */
+.btn {
+    padding: 2rem 3rem;
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--pink);  
+    border: 0.35rem solid var(--pink);
+    transition: background-color 0.3s ease;
+}
+
+.btn__clr--secondary {
+    background-color: var(--blue);
+    border: 0.35rem solid var(--blue);
+}
+
+.btn:hover {
+    background-color: #e54fed73;
+    transition: all 0.3s ease;
+}
+
+.btn__clr--secondary:hover {
+    background-color:  #00dce465;;
+    transition: all 0.3s ease;
+}
+
+/* 1.3.Social Links */
+.social-links img {
+    display: inline-block;
+    margin: 3rem 0.8rem 0 0.8rem;
+}
+
+
+/* ===========================================
+2.HERO SECTION 
+*/
+.hero {
+    background: url(../images/hero-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 13rem 20rem 7.5rem 20rem;
+    color: var(--white);
+}
+
+/* 2.1.Hero-Navigation */
+.hero__navigation {
+    height: 13.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hero__menu {
+    display: flex;
+}
+
+.hero__menu-item {
+    margin-left: 5rem;
+}
+
+.hero__menu-link {
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+
+.hero__menu-link:hover {
+    border-bottom: 0.35rem solid var(--pink);
+    transition: all 0.1s ease;
+}
+
+/* 2.2.Hero-Information */
+/* Left */
+.hero__info {
+    margin-top: 26rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__title {
+    width: 38rem;
+    height: auto;
+    font-size: 5.8rem;
+    font-weight: 900;
+    line-height: 5rem;
+    z-index: 1;
+    position: relative;
+}
+
+.hero__text {
+    width: 62rem;
+    height: auto;
+    font-size: 3.3rem;
+    font-weight: 500;
+    line-height: 1;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.hero__btn {
+    font-size: 2.5rem;
+    
+}
+
+/* Right */
+.hero__info-right {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hero__info-right img {
+    margin-bottom: 1rem;
+}
+
+.hero__info-right p {
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+    font-weight: 500;
+}
+
+.hero__info-right p:first-of-type {
+    color: var(--blue);
+}
+
+/* 2.3.Hero-Images */
+.hero-purple-line {
+    position: absolute;
+    top: 33rem;
+    left: 0;
+}
+
+.hero-thumb {
+    position: absolute;
+    top: 50rem;
+    left: 10rem;
+}
+
+.hero-pipe {
+    position: absolute;
+    top: 66.3rem;
+    right: 0;
+    z-index: 1;
+}
+
+.hero-purple-cross {
+    position: absolute;
+    top: 69rem;
+    right: 16.5rem;
+}
+
+
+/* ===========================================
+3.BENEFITS SECTION
+*/
+.benefits-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 13rem 16rem 16rem 16rem;
+}
+
+.benefit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 6rem;
+}
+
+.benefit-title {
+    font-size: 2.9rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.3rem;
+    color: var(--grey);
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+    margin: 5rem 0 3rem 0;
+}
+
+.benefit-text {
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.3rem;
+    color: var(--black);
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.benefit-pink-thumb {
+    position: absolute;
+    top: 99rem;
+    right: 0;
+}
+
+.benefit-blue-thumb {
+    position: absolute;
+    top: 149rem;
+    left: 9rem;
+    z-index: 1;
+}
+
+
+/* ===========================================
+4.COURSES SECTION
+*/
+.courses {
+    background-color: var(--purple);
+    color: var(--white);
+    position: relative;
+    padding: 13rem 20rem;
+}
+
+.courses-main-title {
+    font-size: 3.7rem;
+    letter-spacing: 0.2rem;
+    line-height: 8.3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10.6rem;
+}
+
+.courses-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    width: 28rem;
+}
+
+.course-img-bg {
+    height: 26rem;
+    width: 27.18rem;
+    background-color: #00dde4;
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+}
+
+.course img {
+    height: 26rem;
+    width: auto;
+    z-index: 1;
+}
+
+.course-title {
+    font-size: 2.9rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.3rem;
+    font-weight: 700;
+    color: var(--blue);
+    margin: 4.5rem 0 4.7rem 0;
+}
+
+.course-text {
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.3rem;
+    font-weight: 400;
+    margin-bottom: 7.5rem;
+}
+
+.course-purple-line {
+    position: absolute;
+    top: 34rem;
+    left: 0;
+    z-index: 1;
+}
+
+.course-purple-cross {
+    position: absolute;
+    top: 111.5rem;
+    right: 10rem;
+    z-index: 1;
+}
+
+
+/* ===========================================
+5.ABOUT SECTION
+*/
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 13rem 20rem;
+    position: relative;
+}
+
+.about-img-container {
+    padding-top: 1.2rem;
+}
+
+.about-img-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80rem;
+    height: 28rem;
+    background-color: var(--blue);
+    z-index: -1;
+}
+
+.about-info {
+    margin-left: 10rem;
+    width: 35rem;
+}
+
+.about-main-title {
+    font-size: 3.7rem;
+    letter-spacing: 0.2rem;
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.about-small-title {
+    font-size: 2.9rem;
+    line-height: 2.9rem;
+    color: var(--grey);
+    font-weight: 500;
+    margin: 1.5rem 0 3.5rem 0;
+}
+
+.about-text {
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.3rem;
+    color: var(--grey);
+    font-weight: 400;
+    margin-bottom: 6rem;
+}
+
+.about-pipe {
+    position: absolute;
+    bottom: -8rem;
+    left: 31rem;
+}
+
+
+/* ===========================================
+6.INSTRUCTORS SECTION
+*/
+.instructors-section {
+    background-color: var(--purple);
+    padding: 13rem 7.5rem 6rem 7.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 81rem; */
+}
+
+.instructors-main-title {
+    font-size: 3.7rem;
+    letter-spacing: 0.2rem;
+    line-height: 8.3rem;
+    color: var(--white);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.instructors {
+    display: flex; 
+}
+
+.instructor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8.5rem;
+}
+
+.instructor-image {
+    width: 100%;
+    height: 53rem;
+}
+
+.instructor-tag {
+    transform: translate(0, -6.9rem);
+    background-color: var(--blue);
+    padding: 4rem 6rem;
+}
+
+.instructor-name {
+    font-size: 2.9rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.3rem;
+    color: var(--white);
+    font-weight: 700;
+    text-align: center;
+}
+
+.instructor-info {
+    font-size: 2.1rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.3rem;
+    color: var(--white);
+    font-weight: 400;
+    text-align: center;
+}
+
+.social-links-instructor {
+    transform: translate(0, -6.9rem);
+}
+
+
+/* ===========================================
+7.OUR GALLERY SECTION
+*/
+.gallery-section {
+    position: relative;
+    padding: 13rem 0 6rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 81rem; */
+}
+
+.gallery-main-title {
+    font-size: 3.7rem;
+    letter-spacing: 0.2rem;
+    line-height: 8.3rem;
+    color: var(--blue);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.gallery-small-title {
+    font-size: 2.9rem;
+    line-height: 2.9rem;
+    color: var(--grey);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.gallery-images img {
+    margin-bottom: 4rem;
+}
+
+.gallery-info {
+    font-size: 2.1rem;
+    letter-spacing: 0.2rem;
+    line-height: 2.9rem;
+    color: var(--grey);
+    font-weight: 500;
+    text-align: center;
+}
+
+.gallery-thumb {
+    position: absolute;
+    top: -6rem;
+    left: 35rem;
+}
+
+
+/* ===========================================
+8.CTA DOWNLOAD APP SECTION
+*/
+.cta-download-app-section {
+    background-image: url(../images/cta-download-app-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 93rem;
+    padding: 13rem 15rem 4rem 93rem;
+}
+
+.cta-download-app-main-title {
+    font-size: 4.2rem;
+    letter-spacing: 0rem;
+    line-height: 3.8rem;
+    color: var(--white);
+    font-weight: 900;
+    text-align: center;
+}
+
+
+/* ===========================================
+9.REGISTER SECTION
+*/
+.register-section {
+    background-image: url(../images/register-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 57rem;
+    padding: 13rem 80rem 7rem 28rem;
+}
+
+.register-main-title {
+    font-size: 3.7rem;
+    letter-spacing: 0.2rem;
+    line-height: 8.3rem;
+    color: var(--blue);
+    font-weight: 700;
+    margin-bottom: 5rem;
+}
+
+.register-info {
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.3rem;
+    color: var(--white);
+    font-weight: 500;
+    margin-bottom: 2.6rem;
+}
+
+
+/* ===========================================
+10.FOOTER
+*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5.5rem 11rem 6rem 5.5rem;
+    background-color: var(--purple);
+    color: var(--white);
+    position: relative;
+}
+
+.footer-logo {
+    margin-bottom: 4rem;
+    position: absolute;
+    top: 5.5rem;
+    left: 13rem;
+}
+
+.footer-1 h1 {
+    font-size: 4.2rem;
+    letter-spacing: 0.2rem;
+    line-height: 3.3rem;
+    color: var(--blue);
+    font-weight: 900;
+    margin-top: 17rem;
+    margin-bottom: 2rem;
+}
+
+.footer-1 p {
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 2.9rem;
+    font-weight: 300;
+}
+
+.footer-2 h2,
+.footer-3 h2 {
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    line-height: 7.5rem;
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.footer-2 h2 {
+    margin-bottom: 6rem;
+}
+
+.footer-3 h2 {
+    margin-bottom: 5.5rem;
+}
+
+.footer__menu-link {
+    font-size: 2.1rem;
+    letter-spacing: 0.2rem;
+    line-height: 3.8rem;
+    font-weight: 600;
+}
+
+.footer-3 p {
+    font-size: 2.1rem;
+    letter-spacing: 0rem;
+    line-height: 3.8rem;
+    font-weight: 300;
+} 
+
+.footer-pipe {
+    position: absolute;
+    top: -16rem;
+    right: 21rem;
+}
+
