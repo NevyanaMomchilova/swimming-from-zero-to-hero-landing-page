@@ -116,16 +116,17 @@ Table of Content:
     margin-top: 26rem;
     display: flex;
     justify-content: space-between;
+    min-height: 350px;
 }
 
 .hero__title {
+    position: relative;
     width: 38rem;
     height: auto;
     font-size: 5.8rem;
     font-weight: 900;
     line-height: 5rem;
     z-index: 1;
-    position: relative;
 }
 
 .hero__text {
@@ -164,6 +165,7 @@ Table of Content:
 .hero__info-right p:first-of-type {
     color: var(--blue);
 }
+
 
 /* 2.3.Hero-Images */
 .hero-purple-line {
@@ -249,9 +251,9 @@ Table of Content:
 4.COURSES SECTION
 */
 .courses {
+    position: relative;
     background-color: var(--purple);
     color: var(--white);
-    position: relative;
     padding: 13rem 20rem;
 }
 
@@ -280,17 +282,17 @@ Table of Content:
 }
 
 .course-img-bg {
-    height: 26rem;
-    width: 27.18rem;
-    background-color: #00dde4;
     position: absolute;
     top: -2rem;
     left: -2rem;
+    height: 26rem;
+    width: 27.18rem;
+    background-color: #00dde4;
 }
 
 .course img {
-    height: 26rem;
-    width: auto;
+    height: auto;
+    width: 100%;
     z-index: 1;
 }
 
@@ -330,11 +332,11 @@ Table of Content:
 5.ABOUT SECTION
 */
 .about-section {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 13rem 20rem;
-    position: relative;
 }
 
 .about-img-container {
@@ -397,7 +399,6 @@ Table of Content:
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* min-height: 81rem; */
 }
 
 .instructors-main-title {
@@ -424,7 +425,7 @@ Table of Content:
 
 .instructor-image {
     width: 100%;
-    height: 53rem;
+    height: auto;
 }
 
 .instructor-tag {
@@ -466,7 +467,6 @@ Table of Content:
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* min-height: 81rem; */
 }
 
 .gallery-main-title {
@@ -475,7 +475,6 @@ Table of Content:
     line-height: 8.3rem;
     color: var(--blue);
     font-weight: 700;
-    text-align: center;
     margin-bottom: 3.5rem;
 }
 
@@ -484,21 +483,19 @@ Table of Content:
     line-height: 2.9rem;
     color: var(--grey);
     font-weight: 500;
-    text-align: center;
     margin-bottom: 5rem;
 }
 
 .gallery-images {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    width: 100%;
     margin-bottom: 2rem;
 }
 
 .gallery-images img {
-    margin-bottom: 4rem;
+    margin: 0 1rem 4rem 1rem;
 }
 
 .gallery-info {
@@ -521,18 +518,18 @@ Table of Content:
 8.CTA DOWNLOAD APP SECTION
 */
 .cta-download-app-section {
+    position: relative;
     background-image: url(../images/cta-download-app-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    background-position: right center;
     height: 93rem;
-    padding: 13rem 15rem 4rem 93rem;
 }
 
 .cta-download-app-main-title {
+    position: absolute;
+    top: 13rem;
+    right: 19rem;
     font-size: 4.2rem;
     letter-spacing: 0rem;
     line-height: 3.8rem;
@@ -541,23 +538,29 @@ Table of Content:
     text-align: center;
 }
 
+.cta-download-app-btn {
+    position: absolute;
+    bottom: 4rem;
+    right: 25.8rem;
+}
+
 
 /* ===========================================
 9.REGISTER SECTION
 */
 .register-section {
+    position: relative;
     background-image: url(../images/register-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    height: 57rem;
-    padding: 13rem 80rem 7rem 28rem;
+    background-position: center center;
+    min-height: 57rem;
 }
 
 .register-main-title {
+    position: absolute;
+    top: 13rem;
+    left: 28rem;
     font-size: 3.7rem;
     letter-spacing: 0.2rem;
     line-height: 8.3rem;
@@ -567,6 +570,10 @@ Table of Content:
 }
 
 .register-info {
+    position: absolute;
+    top: 26rem;
+    left: 28rem;
+    width: 40rem;
     font-size: 2.5rem;
     letter-spacing: 0.1rem;
     line-height: 3.3rem;
@@ -575,25 +582,31 @@ Table of Content:
     margin-bottom: 2.6rem;
 }
 
+.register-btn {
+    position: absolute;
+    top: 45rem;
+    left: 28rem;
+}
+
 
 /* ===========================================
 10.FOOTER
 */
 .footer {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 5.5rem 11rem 6rem 5.5rem;
+    padding: 5.5rem 11rem 6rem 11rem;
     background-color: var(--purple);
     color: var(--white);
-    position: relative;
 }
 
 .footer-logo {
-    margin-bottom: 4rem;
     position: absolute;
     top: 5.5rem;
     left: 13rem;
+    margin-bottom: 4rem;
 }
 
 .footer-1 h1 {

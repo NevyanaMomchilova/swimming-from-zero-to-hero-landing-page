@@ -1,0 +1,54 @@
+/* MEDIA QUERIES */
+/* 1450px
+---------------------------------------------- */
+@media screen and (max-width: 1450px) {
+    /* ===========================================
+    1.GLOBAL 
+    */
+    /* 1.1.Main Padding */
+    /* Smaller with ~60% */
+    .hero {
+        padding: 5rem 8rem 3rem 8rem;
+    }
+
+    .benefits-section {
+        padding: 5rem 6rem 6rem 6rem;
+    }
+
+    .courses {
+        padding: 5rem 8rem;
+    }
+
+    .about-section {
+        padding: 5rem 8rem;
+    }
+
+    .instructors-section {
+        padding: 5rem 3rem 2rem 3rem;
+    }
+
+    .gallery-section {
+        padding: 5rem 0 3rem 0;
+    }
+
+    .footer {
+        padding: 2.5rem 4.5rem 2.5rem 4.5rem;
+    }
+    
+
+    /* ===========================================
+    8.CTA DOWNLOAD APP SECTION
+    */
+    .cta-download-app-main-title {
+        right: 17rem;
+    }
+    
+    .cta-download-app-btn {
+        right: 24rem;
+    }
+}
+
+/* last change 04.04.2021 
+1450px - done */
+
+
