@@ -6,6 +6,7 @@ Table of Content:
         1.1.Variables
         1.2.Button
         1.3.Social Links
+        1.4.Typography
     2.HERO SECTION
         2.1.Hero-Navigation
         2.2.Hero-Information
@@ -38,15 +39,15 @@ Table of Content:
 /* 1.2.Button */
 .btn {
     padding: 2rem 3rem;
-    font-size: 2.1rem;
     font-weight: 700;
     color: var(--white);
     background-color: var(--pink);  
     border: 0.35rem solid var(--pink);
     transition: background-color 0.3s ease;
+    z-index: 2;
 }
 
-.btn__clr--secondary {
+.btn-clr-secondary {
     background-color: var(--blue);
     border: 0.35rem solid var(--blue);
 }
@@ -56,7 +57,7 @@ Table of Content:
     transition: all 0.3s ease;
 }
 
-.btn__clr--secondary:hover {
+.btn-clr-secondary:hover {
     background-color:  #00dce465;;
     transition: all 0.3s ease;
 }
@@ -65,6 +66,48 @@ Table of Content:
 .social-links img {
     display: inline-block;
     margin: 3rem 0.8rem 0 0.8rem;
+}
+
+/* 1.4.Typography */
+.hero-title {
+    font-size: 5.8rem;
+}
+
+.cta-download-app-main-title,
+.footer-1 h1 {
+    font-size: 4.2rem;
+}
+
+h1 {
+    font-size: 3.7rem;
+}
+
+.hero-text {
+    font-size: 3.3rem;
+}
+
+h2 {
+    font-size: 2.9rem;
+}
+
+.hero-btn,
+p,
+.footer-2 h2,
+.footer-3 h2 {
+    font-size: 2.5rem;
+}
+
+.btn,
+.hero-menu-link,
+.instructor-info,
+.gallery-info,
+.footer-menu-link,
+.footer-3 {
+    font-size: 2.1rem;
+}
+
+.hero-info-right p {
+    font-size: 1.3rem;
 }
 
 
@@ -80,7 +123,7 @@ Table of Content:
 }
 
 /* 2.1.Hero-Navigation */
-.hero__navigation {
+.hero-navigation {
     height: 13.5rem;
     width: 100%;
     display: flex;
@@ -92,77 +135,68 @@ Table of Content:
     display: none;
 }
 
-.hero__menu {
+.hero-menu {
     display: flex;
 }
 
-.hero__menu-item {
+.hero-menu-item {
     margin-left: 5rem;
 }
 
-.hero__menu-link {
-    font-size: 2.1rem;
+.hero-menu-link {
     font-weight: 500;
 }
 
-.hero__menu-link:hover {
+.hero-menu-link:hover {
     border-bottom: 0.35rem solid var(--pink);
     transition: all 0.1s ease;
 }
 
 /* 2.2.Hero-Information */
 /* Left */
-.hero__info {
+.hero-info {
     margin-top: 26rem;
     display: flex;
     justify-content: space-between;
     min-height: 350px;
 }
 
-.hero__title {
+.hero-title {
     position: relative;
     width: 38rem;
     height: auto;
-    font-size: 5.8rem;
     font-weight: 900;
     line-height: 5rem;
     z-index: 1;
 }
 
-.hero__text {
+.hero-text {
     width: 62rem;
     height: auto;
-    font-size: 3.3rem;
     font-weight: 500;
     line-height: 1;
     margin-top: 2.5rem;
     margin-bottom: 5rem;
 }
 
-.hero__btn {
-    font-size: 2.5rem;
-    
-}
-
 /* Right */
-.hero__info-right {
+.hero-info-right {
     margin-top: 4rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-.hero__info-right img {
+.hero-info-right img {
     margin-bottom: 1rem;
 }
 
-.hero__info-right p {
-    font-size: 1.3rem;
+.hero-info-right p {
     letter-spacing: 0.3rem;
     font-weight: 500;
 }
 
-.hero__info-right p:first-of-type {
+.hero-info-right p:first-of-type {
     color: var(--blue);
 }
 
@@ -200,7 +234,7 @@ Table of Content:
 .benefits-section {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     padding: 13rem 16rem 16rem 16rem;
 }
 
@@ -212,8 +246,11 @@ Table of Content:
     margin: 0 6rem;
 }
 
+.benefit img {
+    z-index: 2;
+}
+
 .benefit-title {
-    font-size: 2.9rem;
     letter-spacing: 0.1rem;
     line-height: 3.3rem;
     color: var(--grey);
@@ -221,16 +258,17 @@ Table of Content:
     font-family: "Montserrat";
     text-align: center;
     margin: 5rem 0 3rem 0;
+    z-index: 2;
 }
 
 .benefit-text {
-    font-size: 2.5rem;
     letter-spacing: 0.1rem;
     line-height: 3.3rem;
     color: var(--black);
     font-weight: 400;
     font-family: "Montserrat";
     text-align: center;
+    z-index: 2;
 }
 
 .benefit-pink-thumb {
@@ -258,7 +296,6 @@ Table of Content:
 }
 
 .courses-main-title {
-    font-size: 3.7rem;
     letter-spacing: 0.2rem;
     line-height: 8.3rem;
     font-weight: 700;
@@ -297,7 +334,6 @@ Table of Content:
 }
 
 .course-title {
-    font-size: 2.9rem;
     letter-spacing: 0.1rem;
     line-height: 3.3rem;
     font-weight: 700;
@@ -306,7 +342,6 @@ Table of Content:
 }
 
 .course-text {
-    font-size: 2.5rem;
     letter-spacing: 0.1rem;
     line-height: 3.3rem;
     font-weight: 400;
@@ -359,14 +394,12 @@ Table of Content:
 }
 
 .about-main-title {
-    font-size: 3.7rem;
     letter-spacing: 0.2rem;
     color: var(--blue);
     font-weight: 700;
 }
 
 .about-small-title {
-    font-size: 2.9rem;
     line-height: 2.9rem;
     color: var(--grey);
     font-weight: 500;
@@ -374,7 +407,6 @@ Table of Content:
 }
 
 .about-text {
-    font-size: 2.5rem;
     letter-spacing: 0.1rem;
     line-height: 3.3rem;
     color: var(--grey);
@@ -402,7 +434,6 @@ Table of Content:
 }
 
 .instructors-main-title {
-    font-size: 3.7rem;
     letter-spacing: 0.2rem;
     line-height: 8.3rem;
     color: var(--white);
@@ -435,7 +466,6 @@ Table of Content:
 }
 
 .instructor-name {
-    font-size: 2.9rem;
     letter-spacing: 0.1rem;
     line-height: 3.3rem;
     color: var(--white);
@@ -444,7 +474,6 @@ Table of Content:
 }
 
 .instructor-info {
-    font-size: 2.1rem;
     letter-spacing: 0.1rem;
     line-height: 3.3rem;
     color: var(--white);
@@ -470,7 +499,6 @@ Table of Content:
 }
 
 .gallery-main-title {
-    font-size: 3.7rem;
     letter-spacing: 0.2rem;
     line-height: 8.3rem;
     color: var(--blue);
@@ -479,7 +507,6 @@ Table of Content:
 }
 
 .gallery-small-title {
-    font-size: 2.9rem;
     line-height: 2.9rem;
     color: var(--grey);
     font-weight: 500;
@@ -499,7 +526,6 @@ Table of Content:
 }
 
 .gallery-info {
-    font-size: 2.1rem;
     letter-spacing: 0.2rem;
     line-height: 2.9rem;
     color: var(--grey);
@@ -530,7 +556,6 @@ Table of Content:
     position: absolute;
     top: 13rem;
     right: 19rem;
-    font-size: 4.2rem;
     letter-spacing: 0rem;
     line-height: 3.8rem;
     color: var(--white);
@@ -561,7 +586,6 @@ Table of Content:
     position: absolute;
     top: 13rem;
     left: 28rem;
-    font-size: 3.7rem;
     letter-spacing: 0.2rem;
     line-height: 8.3rem;
     color: var(--blue);
@@ -574,7 +598,6 @@ Table of Content:
     top: 26rem;
     left: 28rem;
     width: 40rem;
-    font-size: 2.5rem;
     letter-spacing: 0.1rem;
     line-height: 3.3rem;
     color: var(--white);
@@ -610,7 +633,6 @@ Table of Content:
 }
 
 .footer-1 h1 {
-    font-size: 4.2rem;
     letter-spacing: 0.2rem;
     line-height: 3.3rem;
     color: var(--blue);
@@ -620,7 +642,6 @@ Table of Content:
 }
 
 .footer-1 p {
-    font-size: 2.5rem;
     letter-spacing: 0.1rem;
     line-height: 2.9rem;
     font-weight: 300;
@@ -628,7 +649,6 @@ Table of Content:
 
 .footer-2 h2,
 .footer-3 h2 {
-    font-size: 2.5rem;
     letter-spacing: 0.2rem;
     line-height: 7.5rem;
     color: var(--blue);
@@ -643,15 +663,13 @@ Table of Content:
     margin-bottom: 5.5rem;
 }
 
-.footer__menu-link {
-    font-size: 2.1rem;
+.footer-menu-link {
     letter-spacing: 0.2rem;
     line-height: 3.8rem;
     font-weight: 600;
 }
 
 .footer-3 p {
-    font-size: 2.1rem;
     letter-spacing: 0rem;
     line-height: 3.8rem;
     font-weight: 300;

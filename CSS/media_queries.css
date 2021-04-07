@@ -6,7 +6,7 @@
     1.GLOBAL 
     */
     /* 1.1.Main Padding */
-    /* Smaller with ~60% */
+    /* Smaller with 60% */
     .hero {
         padding: 5rem 8rem 3rem 8rem;
     }
@@ -34,6 +34,28 @@
     .footer {
         padding: 2.5rem 4.5rem 2.5rem 4.5rem;
     }
+
+
+    /* ===========================================
+    3.BENEFITS SECTION
+    */
+    .benefit-blue-thumb {
+        top: 125rem;
+        left: 4rem;
+    }
+
+
+    /* ===========================================
+    4.COURSES SECTION
+    */
+    .course-purple-line {
+        top: 20rem;
+    }
+    
+    .course-purple-cross {
+        top: 95rem;
+        right: 4rem;
+    }
     
 
     /* ===========================================
@@ -48,7 +70,146 @@
     }
 }
 
-/* last change 04.04.2021 
-1450px - done */
 
+/* 1270px
+---------------------------------------------- */
+@media screen and (max-width: 1270px) {
+    /* ===========================================
+    1.GLOBAL
+    */
+    /* 1.4.Typography */
+    /* Smaller with 20% */
+    .hero-title {
+        font-size: 4.6rem;
+    }
+    
+    .cta-download-app-main-title,
+    .footer-1 h1 {
+        font-size: 3.4rem;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-text {
+        font-size: 2.7rem;
+    }
+    
+    h2 {
+        font-size: 2.3rem;
+    }
+    
+    .hero-btn,
+    p,
+    .footer-2 h2,
+    .footer-3 h2 {
+        font-size: 2rem;
+    }
+    
+    .btn,
+    .hero-menu-link,
+    .instructor-info,
+    .gallery-info,
+    .footer-menu-link,
+    .footer-3 {
+        font-size: 1.7rem;
+    }
+
+    .btn {
+        padding: 1.6rem 2.4rem;  
+    }
+    
+    .hero-info-right p {
+        font-size: 1rem;
+    }
+
+
+    /* ===========================================
+    5.ABOUT SECTION
+    */
+    /* Smaller with 20% */
+    .about-img-bg {
+        width: 64rem;
+        height: 23rem;
+    }
+
+    .about-img {
+        width: 46rem;
+        height: auto;
+    }
+
+    .about-pipe {
+        left: 22rem;
+    }
+
+
+    /* ===========================================
+    8.CTA DOWNLOAD APP SECTION
+    */
+    .cta-download-app-main-title {
+        right: 21rem;
+    }
+    
+    .cta-download-app-btn {
+        bottom: 5rem;
+        right: 25.5rem;
+    }
+
+
+    /* ===========================================
+    9.REGISTER SECTION
+    */
+    .register-main-title,
+    .register-info,
+    .register-btn {
+        left: 14rem; 
+    }
+
+
+    /* ===========================================
+    10.FOOTER
+    */
+    .footer-pipe {
+        right: 10rem;
+    }
+}
+
+
+
+/* last change 07.04.2021
+CREATE THE NAVIGATION HAMBURGER MENU
+
+NEXT BREAK POINTS:
+-global
+    buttons
+    font-size
+
+1210
+- hero nav
+    
+1160 - strange shift in the alignment
+- footer
+    
+1120
+- courses
+- benefits
+- about
+    
+850-800
+- instructors
+
+700
+- register
+
+680
+- cta download app
+
+
+- gallery
+
+ */
+
+
+ /* ADD NEW BREAK PONT BELOW */
 
