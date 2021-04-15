@@ -34,23 +34,23 @@
 <body>
     <!-- HERO SECTION and NAVIGATION -->
     <div class="hero">
-        <div class="hero-navigation">
-            <img class="logo" src="./images/logo.svg" alt="swimming logo">
-            <nav>
-                <div class="hamburger">
-                    <div class="hamburger-line"></div>
-                    <div class="hamburger-line"></div>
-                    <div class="hamburger-line"></div>
-                </div>
+        <nav class="hero-navigation">
+            <a href="#"><img class="hero-logo" src="./images/logo.svg" alt="swimming logo"></a>
+            <div class="hamburger">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+            <div>
                 <ul class="hero-menu">
                     <li class="hero-menu-item">
                         <a class="hero-menu-link" href="#">HOME</a>
                     </li>
                     <li class="hero-menu-item">
-                        <a class="hero-menu-link" href="#about">ABOUT</a>
+                        <a class="hero-menu-link" href="#courses">COURSES</a>
                     </li>
                     <li class="hero-menu-item">
-                        <a class="hero-menu-link" href="#courses">COURSES</a>
+                        <a class="hero-menu-link" href="#about">ABOUT</a>
                     </li>
                     <li class="hero-menu-item">
                         <a class="hero-menu-link" href="#instructors">INSTRUCTORS</a>
@@ -62,24 +62,27 @@
                         <a class="hero-menu-link" href="#contact">CONTACT</a>
                     </li>
                 </ul>
-            </nav>
-        </div>
-        <div class="hero-info">
-            <div class="hero-info-left">
-                <h1 class="hero-title">SWIMMING FROM ZERO TO HERO!</h1>
-                <p class="hero-text">Make sure to feature your bestsellers or signature products or pieces. </p>
-                <a class="btn hero-btn" href="#">READ MORE</a>
             </div>
-            <div class="hero-info-right">
-                <img class="hero-dash" src="./images/hero-dash.png" alt="hero-dash">
-                <p>PROFESSIONAL</p>
-                <p>SWIMMING LESSONS</p>
+        </nav>
+        <div class="hero-bg">
+            <div class="hero-info">
+                <div class="hero-info-left">
+                    <h1 class="hero-title">SWIMMING FROM ZERO TO HERO!</h1>
+                    <p class="hero-text">Make sure to feature your bestsellers or signature products or pieces. </p>
+                    <a class="btn hero-btn" href="#">READ MORE</a>
+                </div>
+                <div class="hero-info-right">
+                    <img class="hero-dash" src="./images/hero-dash.png" alt="hero-dash">
+                    <p>PROFESSIONAL</p>
+                    <p>SWIMMING LESSONS</p>
+                </div>
             </div>
         </div>
         <img class="hero-purple-line" src="./images/hero-purple-line.png" alt="hero-purple-line">
         <img class="hero-thumb" src="./images/hero-thumb.png" alt="hero-thumb">
         <img class="hero-pipe" src="./images/hero-pipe.png" alt="hero-pipe">
         <img class="hero-purple-cross" src="./images/hero-purple-cross.png" alt="hero-purple-cross">
+        <div class="hero-layer"></div>
     </div>
 
     <!-- BENEFITS SECTION -->
@@ -232,19 +235,19 @@
                     <a class="footer-menu-link" href="#">HOME</a>
                 </li>
                 <li class="footer-menu-item">
-                    <a class="footer-menu-link" href="#">ABOUT</a>
+                    <a class="footer-menu-link" href="#courses">COURSES</a>
                 </li>
                 <li class="footer-menu-item">
-                    <a class="footer-menu-link" href="#">COURSES</a>
+                    <a class="footer-menu-link" href="#about">ABOUT</a>
                 </li>
                 <li class="footer-menu-item">
-                    <a class="footer-menu-link" href="#">INSTRUCTOR</a>
+                    <a class="footer-menu-link" href="#instructors">INSTRUCTORS</a>
                 </li>
                 <li class="footer-menu-item">
-                    <a class="footer-menu-link" href="#">GALLERY</a>
+                    <a class="footer-menu-link" href="#gallery">GALLERY</a>
                 </li>
                 <li class="footer-menu-item">
-                    <a class="footer-menu-link" href="#">CONTACT</a>
+                    <a class="footer-menu-link" href="#contact">CONTACT</a>
                 </li>
             </ul>
         </div>
@@ -264,5 +267,7 @@
         <img class="footer-pipe" src="./images/pipe.png" alt="footer-pipe">
     </footer>
 
+    <!-- JAVASCRIPT -->
+    <script src="app.js"></script>
 </body>
 </html>

@@ -34,6 +34,7 @@ Table of Content:
     --blue: #00dde4;
     --pink: #e54fed;
     --purple: #432e8b;
+    --navbar: #009eb9;
 }
 
 /* 1.2.Button */
@@ -115,24 +116,51 @@ p,
 2.HERO SECTION 
 */
 .hero {
+    position: relative;
+    color: var(--white);
+}
+
+.hero-bg {
     background: url(../images/hero-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 13rem 20rem 7.5rem 20rem;
-    color: var(--white);
+    height: 130vh;
+    width: 100%;
+    position: relative;
+    z-index: 0;
 }
 
 /* 2.1.Hero-Navigation */
 .hero-navigation {
-    height: 13.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 13rem 20rem 0 20rem;
+    z-index: 4;
 }
 
 .hamburger {
     display: none;
+    position: fixed;
+    top: 5rem;
+    right: 8rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3.8rem;
+    height: 2.5rem;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.hamburger-line {
+    height: 0.5rem;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 10px;
 }
 
 .hero-menu {
@@ -152,13 +180,39 @@ p,
     transition: all 0.1s ease;
 }
 
+.hero-layer {
+    display: none;
+}
+
+/* Changes to the hero-navigation background color when scrolling down and up */
+.hero-navigation-nav-scrolled {
+    padding: 1.5rem 8rem 0 8rem;
+}
+
+.hero-logo-nav-scrolled {
+    height: 8rem;
+}
+
+.hero-layer-nav-scrolled {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.80);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 11rem;
+    z-index: 3;
+}
+
 /* 2.2.Hero-Information */
 /* Left */
 .hero-info {
-    margin-top: 26rem;
+    position: relative;
+    padding: 52.5rem 20rem 7.5rem 20rem;
     display: flex;
     justify-content: space-between;
     min-height: 350px;
+    z-index: 3;
 }
 
 .hero-title {
@@ -167,7 +221,7 @@ p,
     height: auto;
     font-weight: 900;
     line-height: 5rem;
-    z-index: 1;
+    z-index: 3;
 }
 
 .hero-text {
