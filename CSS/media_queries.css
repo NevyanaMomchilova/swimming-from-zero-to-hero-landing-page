@@ -1,6 +1,7 @@
 /* MEDIA QUERIES */
 /* 1450px
 ---------------------------------------------- */
+/* Padding, position, logo size */
 @media screen and (max-width: 1450px) {
     /* ===========================================
     1.GLOBAL 
@@ -34,6 +35,10 @@
 
     .gallery-section {
         padding: 5rem 0 3rem 0;
+    }
+
+    .register-section {
+        padding: 5rem 0 3rem 19rem;
     }
 
     .footer {
@@ -97,6 +102,7 @@
 
 /* 1270px
 ---------------------------------------------- */
+/* Typography, img size */
 @media screen and (max-width: 1270px) {
     /* ===========================================
     1.GLOBAL
@@ -182,16 +188,6 @@
 
 
     /* ===========================================
-    9.REGISTER SECTION
-    */
-    .register-main-title,
-    .register-info,
-    .register-btn {
-        left: 14rem; 
-    }
-
-
-    /* ===========================================
     10.FOOTER
     */
     .footer-pipe {
@@ -202,11 +198,26 @@
 
 /* 1120px
 ---------------------------------------------- */
+/* Sections & Navigation - hamburger menu */
 @media screen and (max-width: 1120px) {
+    /* ===========================================
+    1.GLOBAL 
+    */
+    /* 1.1.Main Padding */
+    /* Smaller with 60% */
+    .register-section {
+        padding: 5rem 8rem 3rem 8rem;
+    }
+
+
     /* ===========================================
     2.HERO SECTION 
     */
     /* 2.1.Hero-Navigation */
+    .hero {
+        height: 98rem;
+    }
+
     .hero-layer.active {
         display: block;
         background-color: rgba(0, 0, 0, 0.80);
@@ -215,7 +226,6 @@
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: 2;
     }
 
     .hamburger {
@@ -230,7 +240,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-        z-index: 3;
     }
 
     .hero-menu.active {
@@ -240,69 +249,361 @@
     .hero-menu-item {
         padding-bottom: 3rem;
     }
-    
-    /* .hero-navigation {
-        width: 100%;
-        background-color: var(--navbar);
+
+    /* 2.2.Hero-Information */
+    .hero-info {
+        flex-direction: column;
     }
 
-    nav div {
-        width: 100%;
+    .hero-info-right p:first-of-type {
+        color: var(--white);
+    }
+
+
+    /* ===========================================
+    3.BENEFITS SECTION
+    */
+    .benefit {
+        margin: 4rem 6rem;
+    }
+
+    .benefits-section {
+        flex-direction: column;
+    }
+
+    .benefit-title {
+        margin: 5rem 0 2rem 0;
+    }
+
+    .benefit-blue-thumb {
+        top: 180rem;
+        left: 5rem;
+    }
+
+
+    /* ===========================================
+    4.COURSES SECTION
+    */
+    .courses-section {
+        flex-direction: column;
+    }
+
+    .course {
+        justify-content: center;
+        align-items: center;
+        width: 50rem;
+        text-align: center;
+        margin-bottom: 12rem;
+    }
+
+    .course-img-bg {
+        position: absolute;
+        top: -2rem;
+        left: 9.5rem;
+        height: 26rem;
+        width: 27.18rem;
+        background-color: #00dde4;
+    }
+
+    .course img {
+        height: 26rem;
+        width: auto;
+    }
+
+    .course-title {
+        margin: 4.5rem 0 2rem 0;
     }
     
-    .hero-menu {
-       
+    .course-text {
+        margin-bottom: 3.5rem;
+    }
+
+    .course-purple-cross {
+        top: 214.5rem;
+        right: 10rem;
+    }
+
+
+    /* ===========================================
+    5.ABOUT SECTION
+    */
+    .about-section {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 8rem;
+    }
+
+    .about-info {
+        margin-left: 0;
+        width: 50rem;
+    }
+
+    .about-main-title {
+        margin: 4.5rem 0 2.5rem 0;
+    }
+    
+    .about-small-title {
+        margin: 0rem 0 2rem 0;
+    }
+    
+    .about-text {
+        margin-bottom: 6rem;
+    }
+    
+    .about-pipe {
+        position: absolute;
+        bottom: -10rem;
+        left: 8rem;
+    }
+
+
+    /* ===========================================
+    7.OUR GALLERY SECTION
+    */
+    .gallery-thumb {
+        top: -6rem;
+        left: 15rem;
+    }
+
+
+    /* ===========================================
+    10.FOOTER
+    */
+    .footer {
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-end;
-        padding-top: 50rem;
-        width: 100%;
-        height: 50vh;
-        background-color: var(--navbar);
     }
 
-    .hero-menu-item {
-        margin: 0 0 2rem 0;
-    } */
+    .footer-1 {
+        margin: 4rem 4rem 2rem 4rem;
+    }
 
+    .footer-logo {
+        position: static;
+        margin: 0 0 2rem 0;
+    }
+
+    .footer-1 h1 {
+        margin: 0 0 3rem 0;
+    }
+
+    .footer-2 {
+        margin: 4rem 4rem 2rem 4rem;
+    }
+
+    .footer-2 h2 {
+        margin: 0 0 1rem 0;
+    }
+
+    .footer-3 {
+        margin: 4rem 4rem 2rem 4rem;
+    }
+    
+    .footer-3 h2 {
+        margin: 0 0 1rem 0;
+    }
 }
 
 
-/* last change 07.04.2021
+/* 768px
+---------------------------------------------- */
+@media screen and (max-width: 768px) {
+    /* ===========================================
+    1.GLOBAL
+    */
+    /* 1.4.Typography */
+    /* Smaller with 10% */
+    .hero-title {
+        font-size: 4.1rem;
+    }
+    
+    .cta-download-app-main-title,
+    .footer-1 h1 {
+        font-size: 3rem;
+    }
+    
+    h1 {
+        font-size: 2.7rem;
+    }
+    
+    .hero-text {
+        font-size: 2.4rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-btn,
+    p,
+    .footer-2 h2,
+    .footer-3 h2 {
+        font-size: 1.8rem;
+    }
+    
+    .btn,
+    .hero-menu-link,
+    .instructor-info,
+    .gallery-info,
+    .footer-menu-link,
+    .footer-3 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 1.5rem 2.2rem;  
+    }
+    
+    .hero-info-right p {
+        font-size: 0.9rem;
+    }
+
+
+    /* ===========================================
+    2.HERO SECTION 
+    */
+    .hero {
+        height: 92rem;
+    }
+
+    /* 2.2.Hero-Information */
+    .hero-info {
+        padding: 32.5rem 8rem 3rem 8rem;
+    }   
+    
+    .hero-title {
+        width: 100%;
+    }
+
+    /* 2.3.Hero-Images */
+    .hero-purple-line {
+        top: 17rem;
+        left: 0;
+    }
+
+    .hero-thumb {
+        top: 67rem;
+        left: 5rem;
+    }
+    
+    .hero-pipe {
+        top: 75.3rem;
+        right: 0;
+    }
+    
+    .hero-purple-cross {
+        top: 78rem;
+        right: 16.5rem;
+    }
+
+
+    /* ===========================================
+    3.BENEFITS SECTION
+    */
+    .benefit-blue-thumb {
+        top: 188rem;
+        left: 5rem;
+    }
+
+
+    /* ===========================================
+    4.COURSES SECTION
+    */
+    .course {
+        width: 100%;
+    }
+
+    .course-purple-cross {
+        top: 213rem;
+        right: 10rem;
+    }
+
+
+    /* ===========================================
+    5.ABOUT SECTION
+    */
+    /* Smaller with 20% */
+    .about-img-bg {
+        width: 100%;
+        height: 23rem;
+    }
+
+    .about-info {
+        margin-left: 0;
+        width: 100%;
+    }
+
+
+    /* ===========================================
+    7.OUR GALLERY SECTION
+    */
+    .gallery-small-title,
+    .gallery-info {
+        width: 100%;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .gallery-thumb {
+        top: -8rem;
+        left: 8rem;
+    }
+
+
+    /* ===========================================
+    8.CTA DOWNLOAD APP SECTION
+    */
+    .cta-download-app-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url(../images/cta-download-app-background-resized.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .cta-download-app-main-title {
+        position: static;
+        margin-top: 13rem;
+    }
+    
+    .cta-download-app-btn {
+        position: static;
+        margin-bottom: 4rem;
+    }
+
+
+    /* ===========================================
+    9.REGISTER SECTION
+    */
+    .register-section {
+        align-items: center;
+        text-align: center;
+    }
+
+    .register-info {
+        width: 100%;
+    }
+
+
+    /* ===========================================
+    10.FOOTER
+    */
+    .footer-pipe {
+        top: -18rem;
+        right: 8rem;
+    }
+}
+
+
+/* last change 17.04.2021
 CREATE THE NAVIGATION HAMBURGER MENU
 
-NEXT BREAK POINTS:
--global
-    buttons
-    font-size
+change the paddings and check the course image backgrounds!
 
-
-    
-1120
-- courses
-- benefits
-- about
-
-1100
-- hero nav
-
-1000
-- footer
-
-850-800
-- instructors
-
-700
-- register
-
-680
-- cta download app
-
-
-- gallery
-
- */
-
-
- /* ADD NEW BREAK PONT BELOW */
 

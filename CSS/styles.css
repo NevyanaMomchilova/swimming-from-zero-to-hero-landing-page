@@ -7,6 +7,7 @@ Table of Content:
         1.2.Button
         1.3.Social Links
         1.4.Typography
+        1.5.Z-Index
     2.HERO SECTION
         2.1.Hero-Navigation
         2.2.Hero-Information
@@ -111,6 +112,48 @@ p,
     font-size: 1.3rem;
 }
 
+/* 1.5.Z-Index */
+img {
+    z-index: 20;
+}
+
+.hero-purple-line,
+.hero-thumb,
+.hero-purple-cross,
+.benefit-pink-thumb,
+.benefit-blue-thumb,
+.course-purple-line,
+.course-purple-cross,
+.about-pipe,
+.gallery-thumb,
+.footer-pipe {
+    z-index: 30;
+}
+
+.instructor-tag {
+    z-index: 30;
+}
+
+.hero-pipe {
+    z-index: 40;
+}
+
+h1,
+h2,
+p,
+.btn {
+    z-index: 50;
+    position: relative;
+}
+
+.hero-layer {
+    z-index: 90;
+}
+
+.hero-navigation {
+    z-index: 100;
+}
+
 
 /* ===========================================
 2.HERO SECTION 
@@ -118,16 +161,16 @@ p,
 .hero {
     position: relative;
     color: var(--white);
+    height: 94rem;
+    width: 100%;
 }
 
 .hero-bg {
     background: url(../images/hero-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 130vh;
+    height: 100%;
     width: 100%;
-    position: relative;
-    z-index: 0;
 }
 
 /* 2.1.Hero-Navigation */
@@ -140,7 +183,6 @@ p,
     justify-content: space-between;
     align-items: center;
     padding: 13rem 20rem 0 20rem;
-    z-index: 4;
 }
 
 .hamburger {
@@ -152,7 +194,6 @@ p,
     justify-content: space-between;
     width: 3.8rem;
     height: 2.5rem;
-    z-index: 3;
     cursor: pointer;
 }
 
@@ -201,7 +242,6 @@ p,
     left: 0;
     width: 100%;
     height: 11rem;
-    z-index: 3;
 }
 
 /* 2.2.Hero-Information */
@@ -212,7 +252,6 @@ p,
     display: flex;
     justify-content: space-between;
     min-height: 350px;
-    z-index: 3;
 }
 
 .hero-title {
@@ -221,11 +260,10 @@ p,
     height: auto;
     font-weight: 900;
     line-height: 5rem;
-    z-index: 3;
 }
 
 .hero-text {
-    width: 62rem;
+    max-width: 62rem;
     height: auto;
     font-weight: 500;
     line-height: 1;
@@ -272,7 +310,6 @@ p,
     position: absolute;
     top: 66.3rem;
     right: 0;
-    z-index: 1;
 }
 
 .hero-purple-cross {
@@ -300,10 +337,6 @@ p,
     margin: 0 6rem;
 }
 
-.benefit img {
-    z-index: 2;
-}
-
 .benefit-title {
     letter-spacing: 0.1rem;
     line-height: 3.3rem;
@@ -312,7 +345,6 @@ p,
     font-family: "Montserrat";
     text-align: center;
     margin: 5rem 0 3rem 0;
-    z-index: 2;
 }
 
 .benefit-text {
@@ -322,7 +354,6 @@ p,
     font-weight: 400;
     font-family: "Montserrat";
     text-align: center;
-    z-index: 2;
 }
 
 .benefit-pink-thumb {
@@ -335,7 +366,6 @@ p,
     position: absolute;
     top: 149rem;
     left: 9rem;
-    z-index: 1;
 }
 
 
@@ -384,7 +414,6 @@ p,
 .course img {
     height: auto;
     width: 100%;
-    z-index: 1;
 }
 
 .course-title {
@@ -406,14 +435,12 @@ p,
     position: absolute;
     top: 34rem;
     left: 0;
-    z-index: 1;
 }
 
 .course-purple-cross {
     position: absolute;
     top: 111.5rem;
     right: 10rem;
-    z-index: 1;
 }
 
 
@@ -439,7 +466,10 @@ p,
     width: 80rem;
     height: 28rem;
     background-color: var(--blue);
-    z-index: -1;
+}
+
+.about-img {
+    position: relative;
 }
 
 .about-info {
@@ -498,6 +528,9 @@ p,
 
 .instructors {
     display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .instructor {
@@ -628,18 +661,19 @@ p,
 9.REGISTER SECTION
 */
 .register-section {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     background-image: url(../images/register-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     min-height: 57rem;
+    padding: 13rem 0 7rem 28rem;
 }
 
 .register-main-title {
-    position: absolute;
-    top: 13rem;
-    left: 28rem;
     letter-spacing: 0.2rem;
     line-height: 8.3rem;
     color: var(--blue);
@@ -648,21 +682,12 @@ p,
 }
 
 .register-info {
-    position: absolute;
-    top: 26rem;
-    left: 28rem;
     width: 40rem;
     letter-spacing: 0.1rem;
     line-height: 3.3rem;
     color: var(--white);
     font-weight: 500;
-    margin-bottom: 2.6rem;
-}
-
-.register-btn {
-    position: absolute;
-    top: 45rem;
-    left: 28rem;
+    margin-bottom: 3rem;
 }
 
 
