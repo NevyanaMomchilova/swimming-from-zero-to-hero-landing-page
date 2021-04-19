@@ -35,6 +35,11 @@ hamburger.addEventListener("click", () => {
     heroMenu.classList.toggle("active");
 });
 
+heroLogo.addEventListener("click", () => {
+    heroLayer.classList.toggle("active");
+    heroMenu.classList.toggle("active");
+});
+
 heroMenuItems.forEach(heroMenuItem => {
     heroMenuItem.addEventListener("click", () => {
         heroLayer.classList.toggle("active");
