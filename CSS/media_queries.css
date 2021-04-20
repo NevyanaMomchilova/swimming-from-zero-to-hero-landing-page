@@ -22,19 +22,19 @@
     }
 
     .courses {
-        padding: 5rem 8rem;
+        padding: 10rem 8rem 5rem 8rem;
     }
 
     .about-section {
-        padding: 5rem 8rem;
+        padding: 10rem 8rem 5rem 8rem;
     }
 
     .instructors-section {
-        padding: 5rem 3rem 2rem 3rem;
+        padding: 10rem 3rem 2rem 3rem;
     }
 
     .gallery-section {
-        padding: 5rem 0 3rem 0;
+        padding: 10rem 0 3rem 0;
     }
 
     .register-section {
@@ -422,11 +422,7 @@
     }
 
     .about-section {
-        padding: 8rem 2rem;
-    }
-
-    .gallery-section {
-        padding: 5rem 0 3rem 0;
+        padding: 10rem 2rem;
     }
 
     .register-section {
@@ -652,7 +648,7 @@
     }
 
     .courses {
-        padding: 5rem 2rem;
+        padding: 10rem 2rem;
     }
 
     /* 1.4.Typography */
@@ -762,7 +758,7 @@
     6.INSTRUCTORS SECTION
     */
     .instructors-main-title {
-        margin-bottom: 8rem;
+        margin-bottom: 4rem;
     }
 }
 
